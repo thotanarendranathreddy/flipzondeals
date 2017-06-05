@@ -1,0 +1,236 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Online Live Chat, Web Chat Software &amp; Chat Support Software for Websites flipchat | WebsiteAlive | flipzondeals.com</title>
+        <meta name="description" content="AliveChat, the world's favorite live chat solution, gives your website live chat software. For more info on the best web chat software, call now! Alive chat anywhere!">
+        <meta name="keywords" content="chat, web, website, live, software, solution, support, click, proactive, help, online">
+        <meta name="alt" content="Live Chat" />
+        <meta name="author" content="Narendranath Reddy">
+        <meta name="google-site-verification" content="rravtwdVUY-zZe-n36DpM9OMFSXwEEdmQ7SJNG6HdRY">
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	   <script src="/socket.io/socket.io.js"></script>
+	   	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	   <style> 
+			   .brand{
+		       background-color: #f4511e;
+		            }
+		.userimage{
+		       margin-bottom:0px;
+			    padding:25px;
+		
+		     }
+			 .chatimage{
+			 margin-top:30px;
+			 padding:25px;
+			  display :none;
+			 }
+	       #chatArea {
+               display :none;
+			    margin-top:30px;
+			    padding:20px;
+			    border: 3px solid orange;
+	       }
+		   #userForm{	
+				padding:20px;		   
+			    border: 3px solid orange;
+		   }	
+			footer {
+				 background-color: #f4511e;			
+				 color:#fff;
+			   }	
+			.nath1
+			{
+			border-top:1.5px solid #fff;					
+			color:#ffff80;
+			}
+				.nath2{
+				text-align:right;
+				list-style:none;
+				}
+				.nath2 li
+				{
+				display:inline;
+				padding:0px 5px;
+				}
+				.nath2 li:not(:first-child):before
+				{
+					content:'|';
+					padding:0px 10px;
+				}
+				.nath2 a
+				{
+					color:#ffff00;
+				}
+				.nath2 a:hover
+				{
+					color:#fff;
+					text-decoration: none;
+				}
+			
+	   </style>
+       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-3855553169959585",
+        enable_page_level_ads: true
+    });
+</script>
+   </head>
+   
+   <body>
+   
+   <!-- Navigation position-->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+    <a href="flipzondeals.com" class="w3-bar-item w3-button brand"><b></b>flipchat</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+    <a href="flipzondeals.com"><img src="/storelogo.png" /></a>      
+    </div>					    
+  </div>
+</div>
+        <div class="userimage">
+		<img class="img-responsive" src="https://www.relativerotationgraphs.com/images/site/RRG-extra-comm-2.jpg" height="420" width="700">
+		</div>
+     <div class="container">
+				<div id="userFormArea" class="row">
+				<div class="col-md-9">
+				</div>
+				<div class="col-md-3">
+				
+				<form id="userForm">
+					      <div class="form-group">	
+								<lable> Enter your Name </lable>						  
+							   <input class="form-control" id="username" />
+							   <br/>
+							   <input type="submit" class="btn btn-primary"  value = "login" />	
+						</div>							   
+					 </form>										
+				</div>
+	 </div>							
+							
+							<div class="chatimage text-center">
+	<img class="img-responsive" src="http://www.infotechlb.com/wp-content/uploads/2015/01/Logos-final-2.jpg" height="500"width="900" >
+	</div>						
+	     <div id ="chatArea" class="row">
+		      <div class="col-md-4">
+			   <div id="welcome"><strong>Welcome User</strong></div>
+			   <div class="well"><strong>chatBook&reg;</strong></div>
+			      <div class="well">
+				   <h3>Online Users</h3>
+				   <ul class="lis-group" id="users">
+				   <!-- online user list will be append here-->
+				   </div>
+			  </div>
+		
+			 <div class="col-md-5">	
+					<div class="chat" id="chat"> 
+					<!-- chat will be append here-->
+					</div>
+					   <form id="messageForm">
+					      <div class="form-group">	
+								<lable> Enter Message </lable>						  
+							   <textarea class="form-control" id="message"></textarea>
+							   <br/>
+							   <input type="submit" class="btn btn-primary" value=" send " />
+                               <a href="" class="btn btn-danger">Logout</a>
+								</div>
+					 </form>
+					  </div>   
+		      </div>
+		</div>  
+							<div class="panel-body">
+							</div>
+					<!-- Footer section -->
+					<footer class ="container-fluid text-center">
+         <div class="container">
+                  <div class ="row" >
+                      <div class="panel-body">
+							</div>
+                 <img src="/storelogo.png" />
+                      <div class="panel-body">
+							</div>
+     	         </div>
+            <div class="nath1">
+
+                   <div class="col-md-7"><img src="/nath.jpg" /> All rights reserved.</div>
+                   <div class="col-md-5">
+                   <ul class ="nath2">
+                   	<li><a href='flipzondeals.com'>flipzondeals</a></li>
+                   	<li><a href='flipzondeals.com/blog'>Blog</a></li>
+                   </ul>
+                   </div>
+                   </div>
+
+       </div>
+     </footer>
+		<script>
+
+		    $(function () {
+		        var socket = io.connect();
+		        var $messageForm = $('#messageForm');
+		        var $message = $('#message');
+		        var $chat = $('#chat');
+		        var $chatArea = $('#chatArea');
+		        var $userFormArea = $('#userFormArea');
+		        var $userForm = $('#userForm');
+		        var $users = $('#users');
+		        var $username = $('#username');
+		        var $welcome = $('#welcome');
+
+
+		        // DETECTING ENTER KEY FUNCTION	START
+		        $('.form-control').keypress(function (event) {
+		            var keycode = (event.keyCode ? event.keyCode : event.which);
+		            if (keycode == '13') {
+		                socket.emit('send message', $message.val());
+		                $message.val('');
+		            }
+		        });
+		        // DETECTING ENTER KEY FUNCTION  END
+
+		        $messageForm.submit(function (e) {
+		            e.preventDefault();
+		            socket.emit('send message', $message.val());
+		            $message.val('');
+		        });
+		        socket.on('new message', function (data) {
+		            var check1 = data.msg == '' ? true : false;
+		            if (!check1) {
+		                $chat.append('<div class="well"><strong style="padding:0px 8px 0px 0px;">' + data.user + ':</strong>' + data.msg + '</div>');
+		            }
+		        });
+
+		        $userForm.submit(function (e) {
+		            e.preventDefault();
+		            $welcome.html('<h4 id="welcome">welcome<strong style="padding:0px 0px 0px 8px; color:orange; ">' + $username.val() + '</strong></h4>');
+		            socket.emit('new user', $username.val(), function (data) {
+		                if (data) {
+		                    $('#userFormArea').hide();
+		                    $('.userimage').hide();
+		                    $('.chatimage').show();
+		                    $('#chatArea').show();
+		                } else {
+		                    alert("Please Enter username to Chat")
+		                }
+		            });
+		            $username.val('');
+		        });
+		        socket.on('get users', function (data) {
+
+		            var html = '';
+		            for (i = 0; i < data.length; i++) {
+		                html += '<li class= "list-group-item">' + data[i] + '</li>';
+
+		            }
+		            $users.html(html);
+		        });
+
+		    });
+		</script>
+</body>
+</html>
